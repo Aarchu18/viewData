@@ -1,0 +1,30 @@
+﻿@model ViewData.Models.Details.DataClass
+
+<html>
+<head>
+    <meta name="viewport" content="width=width-device" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4 style="color:orange">Count: @Model.Count</h4>
+        <h6 style="color:red">Keys are as follows:</h6>
+        <ul>
+            @foreach(var key in Model.key)
+        {
+            <li style="color:red">@key</li>
+
+        }
+        </ul>
+        <h6 style="color:forestgreen">Values are as follows:</h6>
+        <ul>
+            @foreach(var Value in Model.Value)
+        {
+            <li style="color:forestgreen">@Value</li>
+        }
+        </ul>
+
+      </div>
+
+</body>
+</html>
